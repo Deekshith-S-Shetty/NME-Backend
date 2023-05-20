@@ -1,0 +1,46 @@
+{{! File to test the working of server. }}
+
+<h1>{{viewTitle}}</h1>
+
+<form action="/student" method="POST" autocomplete="off">
+  <input type="hidden" name="_id" value="{{student._id}}" />
+  <label>Student Name</label>
+  <input
+    type="text"
+    class="form-control"
+    name="stud_name"
+    placeholder="Student Fullname"
+    value="{{student.stud_name}}"
+  />
+  <br />
+  <label>Email Address</label>
+  <input
+    type="text"
+    class="form-control"
+    name="email_add"
+    placeholder="Email Address"
+    value="{{student.email_add}}"
+  />
+  <br />
+  <label>Contact Number</label>
+  <input
+    type="text"
+    class="form-control"
+    name="contact"
+    placeholder="Contact Number"
+    value="{{student.contact}}"
+  />
+  <br />
+  <label>Country</label>
+  <input
+    type="text"
+    class="form-control"
+    name="country"
+    placeholder="Country"
+    value="{{student.country}}"
+  />
+  <br />
+  <button type="submit" class="btn btn-info">
+    Submit</button>
+
+</form>
